@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+ 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h1>Tamil Mathi Profile Flip card </h1>
+<h3>Hover over the image below:</h3>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="Tamilmathi.jpg" alt="Avatar" style="width:400px;height:400px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Tamil Mathi</h1> 
+      <p>Fresher</p> 
+      <p>Looking for my first work experience</p>
+      
+      <p><u>Skill Set</u></p>
+      
+      <pre>
+      
+      FrontEnd: Html,CSS,JavaScript,Jquery,Bootstrap
+      BackEnd: Java,Python
+      Database: SQL
+      
+      </pre>
+
+      <p>Stay Connected</p>
+      <div class="row">
+        <i class="fas fa-mobile"></i>
+        <div class="info">
+            <div class="head">Mobile</div>
+            <div class="sub-title">6381131639</div>
+        </div>
+    </div>
+    <div class="row">
+        <i class="fas fa-envelope"></i>
+        <div class="info">
+            <div class="head">Email</div>
+            <div class="sub-title">tamthi80018@gmail.com</div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
